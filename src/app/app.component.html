@@ -1,0 +1,36 @@
+<div class="image">
+  <div class="container">
+    <div class="login">
+      <div class="title">Welcome</div>
+      <div class="anothertitle">To Student Portal</div>
+      <br />
+      <div class="title">Sign in</div>
+
+      <input type="checkbox" name="check" /> I have read the instructions
+      <input
+        [(ngModel)]="username"
+        type="text"
+        placeholder="Username"
+        name="username"
+      />
+      <br />
+      <input
+        [(ngModel)]="password"
+        type="text"
+        placeholder="password"
+        name="password"
+      />
+      <br />
+      <button (click)="logData()">Submit</button>
+      <br />
+      <div class="a">
+        Student portal user manual
+        <br />
+        New user?
+        <a routerLink="www.google.com">Register now </a>
+        . . .
+        <a routerLink="www.google.com">. Forgot password?</a>
+      </div>
+    </div>
+  </div>
+</div>
